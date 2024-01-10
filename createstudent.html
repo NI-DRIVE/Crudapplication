@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Student</h2>
+
+<form action="." method="post" >
+    {% csrf_token %}
+  <label for="fname">Name:</label><br>
+  <input type="text" id="name" name="name" value="" required><br>
+  <input type="hidden" id="id" name="s_id" value="0"><br>
+  
+  <label for="dob">DOB:</label><br>
+  <input type="date" id="dob" name="dob" value="" required><br>
+  <label for="gender">Gender:</label><br>
+  <input type="text" id="gender" name="gender" value="" required><br><br>
+  <label for="phone">Contact:</label><br>
+  <input type="number" id="phone" name="phone" value="" required><br>
+  <label for="address">Address:</label><br>
+  <input type="text" id="address" name="address" value="" required><br><br>
+  <input type="submit" value="Save">
+</form> 
+
+
+
+</body>
+</html>
+
